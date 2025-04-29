@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Tabs</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="displayall.js" defer></script>
+</head>
+<body>
+  <h1>all tabs</h1>
+
+  <div id="summary">
+    <p id="inactiveSummary">loading all tabs...</p>
+    <button id="expandButton" class="hidden">expand</button>
+  </div>
+
+  <div id="details" class="hidden">
+    <ul id="allTabsList"></ul>
+    <button id="compressButton" class="hidden">compress</button>
+    <button id="deleteInactive" class="hidden">delete selected tabs</button>
+  </div>
+
+  <button id="backToMain">Back to Main</button>
+</body>
+</html>

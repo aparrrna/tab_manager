@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "mont-bold";
+  src: url("MontserratAlternates-Bold.ttf");
+}
+
+@font-face {
+  font-family: "mont-med";
+  src: url("MontserratAlternates-Medium.ttf");
+}
+
+body {
+  font-family: "mont-bold";
+  margin: 0;
+  padding: 10px;
+  box-sizing:border-box;
+  width: 400px;
+  min-height: 300px;
+  max-height: 600px;
+  overflow: auto;
+  color: #333;
+}
+
+h1 {
+  /* text-align: center; */
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #19D1AF;
+}
+
+#summary,
+#details {
+  margin-bottom: 20px;
+}
+
+button {
+  display: box;
+  font-family: "mont-med";
+  width: 50%;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #19D1AF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #003D7A;
+}
+
+button.hidden {
+  display: none;
+}
+
+select {
+  display: block;
+  /* margin: 15px auto; */
+  width: 25%;
+  padding: 3px;
+  font-size: 10px;
+  font-family: "mont-med";
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  font-size: 14px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}

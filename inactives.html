@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inactive Tabs</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="inactives.js" defer></script>
+</head>
+<body>
+  <h1>inactive tabs</h1>
+
+  <!-- Threshold Dropdown -->
+  <label for="inactiveThreshold">set inactive threshold:</label>
+  <select id="inactiveThreshold">
+    <option value="3">3 Days</option>
+    <option value="7">1 Week</option>
+    <option value="15">15 Days</option>
+    <option value="30">1 Month</option>
+  </select>
+
+  <!-- Summary Section -->
+  <div id="summary">
+    <p id="inactiveSummary">loading inactive tabs...</p>
+    <button id="expandButton" class="hidden">expand</button>
+  </div>
+
+  <!-- Hidden Details Section -->
+  <div id="details" class="hidden">
+    <ul id="inactiveTabsList"></ul>
+    <button id="compressButton" class="hidden">compress</button>
+    <button id="deleteInactive" class="hidden">delete selected tabs</button>
+  </div>
+
+  <button id="backToMain">Back to Main</button>
+</body>
+</html>
